@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gülümse Çekiyorum Kısa Film İnternet Sitesi</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: white;
+            border: none;
+            color: black;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .summary {
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="afiş_.png" alt="Film Kapagı">
+        <p class="summary">Özet: Asya, dolabında gizemli bir fotoğraf makinesi bulur ve sınıf arkadaşlarının da ilgisini çeken bu fotoğraf makinesi ile arkadaşlarının fotoğraflarını çekmeye başlar. Ancak çektiği fotoğrafları albüme yerleştirirken gördükleri, gizli gerçekleri gün yüzüne çıkarır.<br> Brief Synopsis: Asya finds a mysterious camera in her closet, which also captures the interest of her classmates. She starts taking pictures of her friends with this intriguing camera. However, as she places the photos she took into the album, she discovers hidden truths coming to light.</p>
+        <button id="fragmanBtn">Fragman</button>
+        <button id="filmBtn">Film</button>
+        <button id="instagramBtn">Instagram</button>
+        <button id="facebookBtn">Facebook</button>
+        <button id="xBtn">X</button>
+        <div class="image-container">
+            <img src="font2.png" alt="Eklenen Resim">
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("fragmanBtn").addEventListener("click", function() {
+            
+            var fragmanURL = "https://drive.google.com/file/d/1JpwvKJaF1LjrNlOeOyWkkvbLd8GqZLsD/view?usp=sharing";
+            window.open(fragmanURL, "_blank");
+        });
+
+        document.getElementById("filmBtn").addEventListener("click", function() {
+            
+            var filmURL = "https://drive.google.com/file/d/1vstONRAtGQwWuz8rSUAJdBOMPsPz1UjK/view?usp=sharing";
+            window.open(filmURL, "_blank");
+        });
+
+        document.getElementById("instagramBtn").addEventListener("click", function() {
+            var instagramURL = "https://www.instagram.com/gulumsecekiyrm?igsh=MXI1a3ZxZzc1eHhudQ==";
+            window.open(instagramURL, "_blank");
+        });
+
+        document.getElementById("facebookBtn").addEventListener("click", function() {
+            var facebookURL = "https://www.facebook.com/profile.php?id=61559087551215&mibextid=ZbWKwL";
+            window.open(facebookURL, "_blank");
+        });
+
+        document.getElementById("xBtn").addEventListener("click", function() {
+            var xURL = "https://x.com/GulumseCekiyrm?t=s7srISoRQbUBAWc4BT94iQ&s=08";
+            window.open(xURL, "_blank");
+        });
+    </script>
+</body>
+</html>
